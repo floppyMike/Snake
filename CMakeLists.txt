@@ -4,6 +4,7 @@ project(Snake VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
 find_package(SDL2 REQUIRED)

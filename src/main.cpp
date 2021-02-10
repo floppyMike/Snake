@@ -264,8 +264,6 @@ public:
 		}
 	};
 
-	void fixed_update(){};
-
 	void render()
 	{
 		if (m_r.will_render())
@@ -297,11 +295,11 @@ auto main(int argc, char **argv) -> int
 {
 	try
 	{
-		sdl::SDL		  s;
-		App				  a;
-		sdl::RunLoop<App> r;
+		sdl::SDL				s;
+		App						a;
+		sdl::SimpleRunLoop<App> r;
 
-		r.add_window(&a);
+		r.window(&a);
 		r.run(60);
 	}
 	catch (const std::exception &e)
