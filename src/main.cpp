@@ -300,7 +300,7 @@ auto main(int argc, char **argv) -> int
 		sdl::SimpleRunLoop<App> r;
 
 		r.window(&a);
-		r.run(60);
+		r.run(30);
 	}
 	catch (const std::exception &e)
 	{
